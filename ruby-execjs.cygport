@@ -1,0 +1,8 @@
+inherit rubygem
+
+NAME="ruby-execjs"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby JavaScript interpreter"
+DESCRIPTION="ExecJS lets you run JavaScript code from Ruby."

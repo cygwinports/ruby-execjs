@@ -2,13 +2,16 @@ inherit rubygem
 
 NAME="ruby-execjs"
 VERSION=2.2.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby JavaScript interpreter"
 DESCRIPTION="ExecJS lets you run JavaScript code from Ruby."
 
+PATCH_URI="2.2.2-jsc.patch"
+
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_execjs_REQUIRES="jsc3"
 ruby_execjs_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
 ruby_execjs_doc_CONTENTS=${RUBYGEM_DOCDIR#/}

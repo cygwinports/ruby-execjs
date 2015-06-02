@@ -12,6 +12,7 @@ PATCH_URI="2.2.2-jsc.patch"
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
-ruby_execjs_REQUIRES="ruby-duktape" # jsc3
+# https://github.com/rails/execjs/issues/21
+ruby_execjs_REQUIRES="jsc3" # ruby-duktape
 ruby_execjs_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
 ruby_execjs_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
